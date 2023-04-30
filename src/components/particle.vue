@@ -119,6 +119,7 @@
     }
     strong {
       font-family: 'PingFangSC-Medium';
+      font-weight: bold;
     }
 	}
 	.e-mail {

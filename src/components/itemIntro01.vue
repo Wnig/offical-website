@@ -37,6 +37,7 @@
   text-align: left;
   font-size: 16px;
   font-family: 'PingFangSC-Semibold';
+  font-weight: bold;
   &:after {
     content: "";
     position: absolute;
@@ -117,10 +118,12 @@
       line-height: 30px;
       font-size: 14px;
       font-family: 'PingFangSC-Medium';
+      font-weight: bold;
       strong {
         color: #5BB8DE;
         font-size: 14px;
         font-family: 'PingFangSC-Medium';
+        font-weight: bold;
       }
     }
 	}

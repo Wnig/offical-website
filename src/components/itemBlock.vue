@@ -19,8 +19,10 @@
 <script setup lang="ts">
 import HeaderItem from './headerItem.vue'
 const slideDown = ()=> {
-
+  let downHeight = document.documentElement.clientHeight || document.body.clientHeight
+  window.scrollTo(0, downHeight)
 }
+
 </script>
 
 <style scoped lang="scss">
@@ -77,6 +79,7 @@ const slideDown = ()=> {
   left: 0;
   width: 100%;
   bottom: 20px;
+  cursor: pointer;
   .down {
     position: relative;
     margin: 0 auto 5px;
