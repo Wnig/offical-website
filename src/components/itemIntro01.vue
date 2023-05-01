@@ -1,6 +1,6 @@
 <template>
   <div class="item-intro-01">
-    <video class="video" src="@/assets/videos/video_03.mp4" autoplay loop></video>
+    <video class="video" src="@/assets/videos/template01/video_03.mp4" autoplay loop></video>
     <div class="con">
         <div class="cont">
           <div class="cont_">
@@ -21,6 +21,7 @@
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/scss/style01.scss';
 .video {
   position: relative;
   left: 0;
@@ -54,7 +55,7 @@
   align-items: center;
   width: 64px;
   height: 24px;
-  background: url('@/assets/images/11.svg') center center no-repeat;
+  background: url('@/assets/images/template01/11.svg') center center no-repeat;
   background-size: 100% 100%;
   cursor: pointer;
   i {

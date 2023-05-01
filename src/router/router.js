@@ -15,6 +15,11 @@ const routes = [
     name: 'template01',
     component: () => import('@/views/template01/index.vue'), // 注意这里要带上 文件后缀.vue
   },
+  {
+    path: '/template02',
+    name: 'template02',
+    component: () => import('@/views/template02/index.vue'), // 注意这里要带上 文件后缀.vue
+  },
 ]
 
 const router = createRouter({

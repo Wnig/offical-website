@@ -23,6 +23,7 @@
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/scss/style01.scss';
 .item-intro-02 {
   display: flex;
   position: relative;
@@ -76,7 +77,7 @@
 		position: relative;
 		width: 50%;
 		height: 100%;
-		background: url('@/assets/images/21.jpg') center center no-repeat;
+		background: url('@/assets/images/template01/21.jpg') center center no-repeat;
 		background-size: 100% 100%;
     h1 {
       position: absolute;
@@ -104,7 +105,7 @@
     align-items: center;
     width: 64px;
     height: 24px;
-    background: url('@/assets/images/11.svg') center center no-repeat;
+    background: url('@/assets/images/template01/11.svg') center center no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
     i {

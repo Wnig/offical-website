@@ -3,28 +3,28 @@
     <div class="header-con">
       <img class="logo" src="@/assets/images/logo.png" alt="">
       <div class="nav-btn-con">
-					<div @click="isShow" class="nav-btn"></div>	
+				<div @click="isShow" class="nav-btn"></div>	
       </div>
       <div class="nav" v-if="data.selShow">
-					<div class="nav_bg" v-show="data.selShow"></div>
-					<div class="nav-btn_">
-						<div class="nav-btn-con_">
-							<div @click="isShow" class="nav-btn-sel"></div>
-						</div>
-					</div>
-				  	<nav>
-				  		<ul>
-							  <li v-for="(navs, index) in data.navData" v-bind:class="{'btn_sel': index == data.num}" @click="selMenus(index)">
-				          <router-link :to="navs.links">{{navs.tit}}</router-link>
-				        </li>
-                <li>
-                  <a>互联网商会</a>
-                </li>
-                <li class="backstage">
-                  <a>后台登录</a>
-                </li>
-				  		</ul>
-				  	</nav>
+        <div class="nav_bg" v-show="data.selShow"></div>
+        <div class="nav-btn_">
+          <div class="nav-btn-con_">
+            <div @click="isShow" class="nav-btn-sel"></div>
+          </div>
+        </div>
+          <nav>
+            <ul>
+              <li v-for="(navs, index) in data.navData" v-bind:class="{'btn_sel': index == data.num}" @click="selMenus(index)">
+                <router-link :to="navs.links">{{navs.tit}}</router-link>
+              </li>
+              <li>
+                <a>互联网商会</a>
+              </li>
+              <li class="backstage">
+                <a>后台登录</a>
+              </li>
+            </ul>
+          </nav>
 				</div>
     </div>
   </div>
@@ -121,7 +121,7 @@ watch(
       .nav-btn {
         width: 60px;
         height: 30px;
-        background: url('@/assets/images/2.svg') center center no-repeat;
+        background: url('@/assets/images/template01/2.svg') center center no-repeat;
         background-size: 100% 100%;
       }
     }
@@ -149,7 +149,7 @@ watch(
         .nav-btn-sel {
           width: 60px;
           height: 30px;
-          background: url('@/assets/images/3.svg') center center no-repeat;
+          background: url('@/assets/images/template01/3.svg') center center no-repeat;
           background-size: 100% 100%;
         }
       }

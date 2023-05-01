@@ -39,6 +39,7 @@
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/scss/style01.scss';
 .particle {
   position: relative;
   overflow: hidden;
@@ -78,7 +79,7 @@
       text-align: center;
       font-size: 10px;
       font-family: 'PingFangSC-Regular';
-      background: url('@/assets/images/9.svg') center center no-repeat;
+      background: url('@/assets/images/template01/9.svg') center center no-repeat;
       background-size: 100% 100%;
       z-index: 2;
     }

@@ -241,13 +241,13 @@
             </div>
         </div>
 
-        <FooterItem ref="footerItem"></FooterItem>
+        <FooterItem01 ref="footerItem01"></FooterItem01>
     </div>
 		  	
 </template>
 
 <script setup lang="ts">
-import FooterItem from './footerItem.vue';
+import FooterItem01 from './footerItem01.vue';
 import { onMounted } from 'vue'
 
 onMounted(() => {
@@ -408,7 +408,7 @@ const startMove = (obj, json, fnEnd)=> {
             width: 2.55vw;
             height: 2.55vw;
             margin: 0 auto 1.85vh;
-            background: url('@/assets/images/14.svg') center center no-repeat;
+            background: url('@/assets/images/template01/14.svg') center center no-repeat;
             background-size: 100% 100%;
         }
 	}
@@ -433,7 +433,7 @@ const startMove = (obj, json, fnEnd)=> {
             width: 2.55vw;
             height: 2.55vw;
             margin: 0 auto 1.85vh;
-            background: url('@/assets/images/15.svg') center center no-repeat;
+            background: url('@/assets/images/template01/15.svg') center center no-repeat;
             background-size: 100% 100%;
         }
 	}

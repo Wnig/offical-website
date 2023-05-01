@@ -3,7 +3,7 @@
     <div class="list-con-item">
       <div class="list-bg">
         <img src="@/assets/images/list_bg.jpg" alt="">
-        <p>新传媒-模板1</p>
+        <p>WNIG集团官网</p>
       </div>
       <div class="list-div-con">
         <div class="list-div-con-info">
@@ -11,15 +11,15 @@
           <p>公司官网 | 简介 | 发展历程 | 新传媒 | IT服务</p>
         </div>
       </div>
-      <div class="list-div-bottom">
-        <a href="">Read more</a>
+      <div class="list-div-bottom" @click="enterPage('01')">
+        <a>Read more</a>
         <i class="icon-next"></i>
       </div>
     </div>
     <div class="list-con-item">
       <div class="list-bg">
         <img src="@/assets/images/list_bg.jpg" alt="">
-        <p>新传媒-模板2</p>
+        <p>WNIG传媒</p>
       </div>
       <div class="list-div-con">
         <div class="list-div-con-info">
@@ -27,8 +27,8 @@
           <p>公司官网 | 简介 | 发展历程 | 新传媒 | IT服务</p>
         </div>
       </div>
-      <div class="list-div-bottom">
-        <a href="">Read more</a>
+      <div class="list-div-bottom" @click="enterPage('02')">
+        <a>Read more</a>
         <i class="icon-next"></i>
       </div>
     </div>
@@ -68,11 +68,19 @@
 </template>
 
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
+let router = useRouter()
 
+const enterPage = (num)=> {
+  router.push({
+    path: `/template${num}`
+  })
+}
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/scss/common.scss";
+@import '@/assets/scss/style01.scss';
 .list-con.ignore-pc {
   .list-con-item {
     display: inline-block;

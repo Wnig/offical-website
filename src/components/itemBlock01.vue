@@ -1,23 +1,23 @@
 <template>
-  <div class="item-block">
-    <video class="video" src="@/assets/videos/video_01.mp4" autoplay loop></video>
+  <div class="item-block01">
+    <video class="video" src="@/assets/videos/template01/video_01.mp4" autoplay loop></video>
     <div class="content">
-      <HeaderItem ref="headerItem"></HeaderItem>
-        <div class="cont">
-          <h1><strong>互联网全域解决方案提供商</strong><br/>
-          专注于产业项目资源整合和改造<br/>
-          探索新互联网经济下新兴的产业模式</h1>
-          <div class="down-con" @click="slideDown">
-            <div class="down"></div>
-            <div class="slidedown">Scroll Down</div>
-          </div>
+      <HeaderItem01 ref="headerItem01"></HeaderItem01>
+      <div class="cont">
+        <h1><strong>互联网全域解决方案提供商</strong><br/>
+        专注于产业项目资源整合和改造<br/>
+        探索新互联网经济下新兴的产业模式</h1>
+        <div class="down-con" @click="slideDown">
+          <div class="down"></div>
+          <div class="slidedown">Scroll Down</div>
         </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import HeaderItem from './headerItem.vue'
+import HeaderItem01 from './headerItem01.vue'
 const slideDown = ()=> {
   let downHeight = document.documentElement.clientHeight || document.body.clientHeight
   window.scrollTo(0, downHeight)
@@ -26,7 +26,7 @@ const slideDown = ()=> {
 </script>
 
 <style scoped lang="scss">
-.item-block {
+.item-block01 {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -85,7 +85,7 @@ const slideDown = ()=> {
     margin: 0 auto 5px;
     width: 20px;
     height: 30px;
-    background: url('@/assets/images/4.svg') center center no-repeat;
+    background: url('@/assets/images/template01/4.svg') center center no-repeat;
     background-size: 100% 100%;
   }
   .down:after {
@@ -98,7 +98,7 @@ const slideDown = ()=> {
     content: '';
     width: 18px;
     height: 8px;
-    background: url('@/assets/images/5.svg') center center no-repeat;
+    background: url('@/assets/images/template01/5.svg') center center no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
     -webkit-animation: fall 1.2s infinite;

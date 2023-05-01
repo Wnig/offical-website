@@ -46,6 +46,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/scss/style01.scss';
 /*侧边返回顶部*/
 .sider-nav {
     position: fixed;
@@ -107,7 +108,7 @@ onUnmounted(() => {
             content: '';
             width: 1.04vw;
             height: 1.77vw;
-            background: url('@/assets/images/8.svg') center center no-repeat;
+            background: url('@/assets/images/template01/8.svg') center center no-repeat;
             background-size: 100% 100%;
         }
     }
