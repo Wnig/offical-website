@@ -41,6 +41,10 @@
 @import '@/assets/scss/style02.scss';
 .item-intro-03 {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -50,7 +54,6 @@
     position: relative;
     text-align: center;
     z-index: 2;
-    padding-top: 16.48vh;
     
     .tit {
       position: relative;
@@ -116,12 +119,13 @@
     .text1 {
       font-size: 14px;
     }
-    img {
-      display: block;
-      width: 55%;
-      margin: 0 auto;
-      padding-top: 40px;
-    }
+  }
+  
+  img {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 80px;
   }
 }
 </style>

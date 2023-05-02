@@ -2,7 +2,7 @@
   <div class="item-block02">
     <video autoplay="true" class="video" loop="true" src="@/assets/videos/template02/video1.mp4"></video>
     <div class="con">
-      <HeaderItem02 ref="headerItem02"></headerItem02>
+      <HeaderItem02 ref="headerItem02"></HeaderItem02>
       <div class="cont">
         <h2 class="text1 tit">一站式、多渠道、最有效的</h2>
         <h2 class="text1">聚合广告媒体平台</h2>
@@ -23,7 +23,8 @@
 <script setup lang="ts">
 import HeaderItem02 from './headerItem02.vue'
 const slideDown = ()=> {
-
+  let downHeight = document.documentElement.clientHeight || document.body.clientHeight;
+  window.scrollTo(0, downHeight);
 }
 </script>
   
