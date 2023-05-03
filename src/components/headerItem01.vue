@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, watch } from 'vue'
+import { reactive, watch, onUnmounted } from 'vue'
 
 let data = reactive({
   selShow: false,
@@ -77,6 +77,10 @@ watch(
     }
   }, { immediate: true }
 )
+
+onUnmounted(()=> {
+  enabledScroll()
+})
 </script>
 
 <style>
@@ -156,28 +160,28 @@ watch(
     }
     nav {
       ul {
-        padding-left: 16.91vw;
+        padding-left: 160px;
       }
       li {
         display: block;
         margin-bottom: 5vh;
         a {
           display: block;
-          line-height: 2.76vw;
+          line-height: 26px;
           cursor: pointer;
           color: #000;
-          font-size: 2.34vw;
+          font-size: 24px;
           font-family: 'PingFangSC-Light';
           -webkit-transition: font-size 0.2s;
               transition: font-size 0.2s;
         }
         .btn_sel a {
           color: #5BB8DE;
-          font-size: 2.86vw;
+          font-size: 28px;
           font-family: 'PingFangSC-Semibold';
         }
         .backstage {
-          padding-top: 6.85vh;
+          padding-top: 632px;
         }
       }
     }

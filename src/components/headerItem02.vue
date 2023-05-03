@@ -29,27 +29,32 @@
     width: 92%;
     margin: 0 auto;
     .logo {
-      flex: 1; 
-      img {
-        width: 13.07vw;
-      }
+      width: 200px;
+      cursor: pointer;
     }
     nav {
       display: flex;
       justify-content: center;
       align-items: center;
-      li {
-        a {
-          display: block;
-          padding: 3vw 0;
-          color: #fff;
-          font-size: 1.3vw;
-          font-family: 'PingFangSC-Regular';
-          cursor: pointer;
+      flex: 1;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        li {
+          a {
+            display: block;
+            padding: 3vw 0;
+            color: #fff;
+            font-size: 1.3vw;
+            font-family: 'PingFangSC-Regular';
+            cursor: pointer;
+          }
         }
-      }
-      .backstage {
-        padding-right: 3vw;
+        .backstage {
+          padding-right: 3vw;
+        }
       }
     }
   }

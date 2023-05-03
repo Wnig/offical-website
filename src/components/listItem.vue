@@ -43,8 +43,8 @@
           <p>公司官网 | 简介 | 发展历程 | 新传媒 | IT服务</p>
         </div>
       </div>
-      <div class="list-div-bottom">
-        <a href="">Read more</a>
+      <div class="list-div-bottom" @click="enterPage('03')">
+        <a>Read more</a>
         <i class="icon-next"></i>
       </div>
     </div>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="list-div-bottom">
-        <a href="">Read more</a>
+        <a>Read more</a>
         <i class="icon-next"></i>
       </div>
     </div>

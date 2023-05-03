@@ -1,36 +1,38 @@
 <template>
-  <div class="item-block01">
-    <video class="video" src="@/assets/videos/template01/video_01.mp4" autoplay loop></video>
-    <div class="content">
-      <HeaderItem01 ref="headerItem01"></HeaderItem01>
+  <div class="item-block03">
+    <video class="video" src="@/assets/videos/template03/video_01.mp4" autoplay="true" loop="true"></video>
+    <div class="con">
+      <HeaderItem03 ref="headerItem03"></HeaderItem03>
       <div class="cont">
-        <h1><strong>互联网全域解决方案提供商</strong><br/>
-        专注于产业项目资源整合和改造<br/>
-        探索新互联网经济下新兴的产业模式</h1>
-        <div class="down-con" @click="slideDown">
-          <div class="down"></div>
-          <div class="slidedown">Scroll Down</div>
+        <div class="cont_">
+          <h1>我们卖的不止是产品，而是盈利模式<br/>
+              选择<strong>WNIG</strong>，就选择盈利！</h1>
+          <div class="down-con" @click="slideDown">
+            <div class="down"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
+  
 <script setup lang="ts">
-import HeaderItem01 from './headerItem01.vue'
+import HeaderItem03 from './headerItem03.vue'
 const slideDown = ()=> {
-  let downHeight = document.documentElement.clientHeight || document.body.clientHeight
-  window.scrollTo(0, downHeight)
+  let downHeight = document.documentElement.clientHeight || document.body.clientHeight;
+  window.scrollTo(0, downHeight);
 }
-
 </script>
-
+  
 <style scoped lang="scss">
-.item-block01 {
+@import '@/assets/scss/style03.scss';
+
+.item-block03 {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
   .video {
     position: relative;
     left: 0;
@@ -41,37 +43,41 @@ const slideDown = ()=> {
     -o-object-fit: fill;
     object-fit: fill;
   }
-  .content {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100vh;
-		background: rgba(0, 0, 0, 0.6);
-    .cont {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      color: #FFFFFF;
+  .con {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+  }
+  h1 {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'PingFangSC-Medium';
+    font-size: 30px;
+    strong {
+      display: inline-block;
+      width: 103px;
+      height: 53px;
+      color: #41A4DF;
       text-align: center;
-      line-height: 30px;
-      font-size: 18px;
-       h1 {
-        color: #FFFFFF;
-        text-align: center;
-        line-height: 30px;	
-        font-size: 18px;
-        font-family: 'PingFangSC-Light';
-      }
-      strong {
-        line-height: 20px;
-        font-size: 36px;
-        color: #5ab8de;
-        font-family: 'PingFangSC-Semibold';
-      }
+      line-height: 53px;
+      font-family: 'PingFangSC-Medium';
+      font-size: 32px;
     }
-	}
+  }
+  .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+  }
 }
 
 .down-con {
@@ -85,7 +91,7 @@ const slideDown = ()=> {
     margin: 0 auto 5px;
     width: 20px;
     height: 30px;
-    background: url('@/assets/images/template01/4.svg') center center no-repeat;
+    background: url('@/assets/images/template03/4.svg') center center no-repeat;
     background-size: 100% 100%;
     &:after {
       position: absolute;
@@ -97,7 +103,7 @@ const slideDown = ()=> {
       content: '';
       width: 18px;
       height: 8px;
-      background: url('@/assets/images/template01/5.svg') center center no-repeat;
+      background: url('@/assets/images/template03/5.svg') center center no-repeat;
       background-size: 100% 100%;
       cursor: pointer;
       -webkit-animation: fall 1.2s infinite;
@@ -113,7 +119,6 @@ const slideDown = ()=> {
     cursor: pointer;
   }
 } 
-
 /*向下效果*/
 @-webkit-keyframes fall {
   0% {

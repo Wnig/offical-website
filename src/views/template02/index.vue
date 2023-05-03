@@ -11,11 +11,11 @@
   
   <script setup lang="ts">
   import ItemBlock02 from '../../components/itemBlock02.vue'
-  import ItemIntro03 from '../../components/itemIntro03.vue';
-  import ItemIntro04 from '../../components/itemIntro04.vue';
-  import ItemIntro05 from '../../components/itemIntro05.vue';
-  import ItemIntro06 from '../../components/itemIntro06.vue';
-  import ItemIntro07 from '../../components/itemIntro07.vue';
+  import ItemIntro03 from '../../components/itemIntro03.vue'
+  import ItemIntro04 from '../../components/itemIntro04.vue'
+  import ItemIntro05 from '../../components/itemIntro05.vue'
+  import ItemIntro06 from '../../components/itemIntro06.vue'
+  import ItemIntro07 from '../../components/itemIntro07.vue'
 
   </script>
   
